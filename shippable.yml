@@ -53,7 +53,7 @@ integrations:
       on_success: always
       on_failure: always
       
-    - integrationName: ship-slack1
+    - integrationName: ship-slack
       type: slack
       recipients: 
         - "#hitchcock1-public"
@@ -75,7 +75,7 @@ integrations:
       on_success: always
       on_failure: always
       
-    - integrationName: ship-hipchat1
+    - integrationName: ship-hipchat
       type: hipchat
       recipients: 
       #  - "#pvt-room"
@@ -88,12 +88,4 @@ integrations:
       on_success: always
       on_failure: always
      
-    - integrationName: test-wh-fail1
-      type: webhook
-      payload:
-        - title= test - $REPO_FULL_NAME - $BUILD_NUMBER - 
-        - body=Shippable Run $BUILD_NUMBER ($BUILD_URL) successs for $COMPARE_URL testing for $COMMITTER and $LAST_AUTHOR and $COMMIT_MESSAGE 
-      
-      on_success: always
-      on_start: always
-      on_failure: always
+   
