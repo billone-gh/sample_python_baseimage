@@ -6,7 +6,7 @@ python:
 
 env:
   - FOO=FUBU
-  - M2=two
+  - M2*=two
 
   #matrix:
    # - M1=ONE
